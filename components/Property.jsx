@@ -6,8 +6,10 @@ import { BsGridFill } from 'react-icons/fa'
 import { GoVerified } from 'react-icons/go'
 import millify from 'millify'
 
-const Property = ({ property }) => (
-    <Link href={`/property/${externalID}`} passHref>
-
+const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, baths, area, agency, isVerified, externalI } }) => (
+    <Link href={`/property/${externalId}`} passHref>
+        {title}
     </Link>
 )
+
+export default Property
